@@ -1,0 +1,300 @@
+* {
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+button {
+  width: 10rem;
+  height: 2rem;
+  border: 2px solid;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+.selected {
+  background-color: black;
+  color: white;
+}
+
+.button-list {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.scroll-list {
+  overflow-y: scroll;
+  height: 70vh;
+  direction: rtl;
+  box-shadow: 0 -5px 5px -5px white;
+  box-shadow: 0 5px 5px -5px white;
+}
+
+.scroll-item {
+  direction: ltr;
+}
+
+.scroll-list::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.scroll-list::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #aaaaaa;
+}
+
+.things-btn {
+  width: 15rem;
+}
+.add-user-btn {
+  margin-left: 1rem;
+}
+
+.del-btn {
+  width: 2rem;
+  background-color: #fc592d;
+  padding: 0;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  margin-left: 0.3rem;
+  overflow: hidden;
+  max-width: 0;
+  /* transition: max-width background-color 0.3s; */
+}
+
+.del-btn:hover {
+  background-color: white;
+  color: #fc592d;
+}
+
+.show-btn {
+  max-width: 2rem;
+}
+
+.header li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 5rem;
+}
+.header {
+  background-color: black;
+  padding: 0;
+}
+.header li a {
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  height: 2rem;
+  padding-top: 10px;
+  width: 5rem;
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid white;
+  transition-duration: 0.5s;
+}
+
+.header li a:hover {
+  box-shadow: 0 0 20px white;
+}
+
+.active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 20px white;
+}
+
+#title {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.container-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+li {
+  list-style: none;
+}
+
+.collapsible-btn {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collapsible-btn--active {
+  background-color: black;
+  color: white;
+}
+
+.collapsible-text {
+  transform-origin: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 0px;
+  width: 0px; */
+  transition: transform 0.5s;
+}
+
+.collapsible-text:hover {
+  transition: rotate(0.6) 0.4s;
+}
+
+.collapsible-content {
+  overflow: hidden;
+  width: 10rem;
+  margin-left: 1rem;
+  max-height: 0;
+  margin: 0;
+  transition: max-height 0.5s;
+}
+
+.item-container {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.item {
+  height: 20rem;
+  width: 20rem;
+  background-color: white;
+  color: black;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+}
+.item h2 {
+  width: 100em;
+  display: inline-block;
+  text-align: center;
+}
+.item p {
+  padding: 0 20px 0 20px;
+}
+
+.item-del-btn {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  overflow: visible;
+  max-width: 200px;
+}
+
+.item-del-btn:hover {
+  background-color: white;
+  border: 2px solid #fc592d;
+  color: #fc592d;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  border: 1px solid black;
+  transition-duration: 0.4s;
+  resize: none;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+}
+
+input:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px white;
+  width: 100%;
+}
+
+.userForm {
+  margin-left: 16px;
+}
+
+.userForm input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.userForm label {
+  font-weight: 300;
+  /* margin-bottom: 10px; */
+}
+
+.userForm textarea {
+  height: 10rem;
+  margin-bottom: 10px;
+}
+
+.add-thing-btn {
+  width: 15rem;
+  margin-left: 1.1rem;
+}
+
+.thingForm {
+  margin-left: 1.1rem;
+  width: 15rem;
+  height: 40rem;
+}
+
+.thingForm input {
+  width: 15rem;
+}
+
+.thingForm label {
+  font-weight: 300;
+}
+
+.thingForm textarea {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 10px;
+}
+
+.thingForm button {
+  width: 15rem;
+}
+
+.user-thing-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-thing-form select {
+  display: block;
+  padding-left: 1rem;
+  margin-bottom: 5rem;
+}
